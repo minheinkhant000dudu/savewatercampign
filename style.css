@@ -1,0 +1,118 @@
+body{
+	font-family: sans-serif;
+       background: skyblue;
+}
+.banners{
+              height: 100vh;
+              background: linear-gradient(
+               20deg,
+               steelblue 30%,
+               skyblue 0% 40%
+              );
+
+              background-size: 5%;
+              transition: 2s;
+       }
+
+       .banners:hover{
+              background-size: 6%;
+              background-position: center;
+       }
+
+
+       .cardhovers:hover{
+              box-shadow: 7px 5px 5px rgba(0,0,0,0.3);
+       }
+       .about{
+              height: 100vh;
+              background: skyblue;
+       }
+       .headaccordion{
+              margin-top: 80px;
+       }
+
+
+
+.accordion{
+	width: 100%;
+}
+.acctitle{
+    background-color: skyblue;
+    color: #fff;
+    font-size: 14px;
+    user-select: none;
+
+    padding: 15px;
+    margin: 0;
+
+    cursor: pointer;
+    
+    /*position: relative;*/
+}
+.acctitle:hover,.active{
+	background-color: steelblue;
+}
+.acctitle::after{
+	content: "\f067"; /* + */
+	font-family: 'Font Awesome 5 Free';
+
+	/*position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%	);*/
+	float: right;
+
+}
+
+/*.active.acctitle::after{
+       content: "\f068 ";
+}*/
+.active::after{
+	content: "\f068";
+}
+.acccontent{
+       height: 0;
+       background-color: #f0f0f0;
+       text-indent: 50px;
+       text-align: justify;
+       font-size: 14px;
+
+       padding: 0 20px;
+       overflow: hidden;     
+
+       transition: height 0.3s ease-in-out;  
+}
+
+.acccontent p{
+       text-transform: lowercase;
+}
+
+ .photos{
+              background: skyblue;
+       }
+.contact{
+       height: 100vh;
+       background: skyblue;
+}
+
+.contact p{
+       margin-top: 100px;
+}
+
+.contactlist{
+       margin-top: 200px;
+}
+
+.contactlist ul{
+       list-style-type: none;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.contactlist ul li{
+       width: 200px;
+}
+.contactlist a{
+       font-size: 50px;
+}
